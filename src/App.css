@@ -1,0 +1,595 @@
+.sign{
+  display: flex;
+  height: 100vh;
+}
+.loginmain{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.loginlink{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px;
+  font-size: 12px;
+}
+.loginform{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.loginGoogleButton{
+  padding: 7px 60px;
+  background-color: rgb(65, 106, 241);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 10px;
+}
+.loginGoogleButton:hover{
+  background-color: rgb(104, 135, 240);
+}
+hr.divider {
+  overflow: visible;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid #d1d0d0;
+  color: #6e6d7a;
+  text-align: center;
+}
+.logintype{
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(233, 233, 233);
+  padding: 5px 100px 5px 20px;
+  outline: none;
+  margin: 5px 0px 10px 0px;
+  transition: 150ms;
+}
+.logintype:hover{
+  border: 1px solid pink;
+  box-shadow: 0px 0px 5px 1px pink;
+  transition: 150ms;
+}
+.loginButton{
+  padding: 7px 60px;
+  background-color: rgb(241, 93, 150);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 10px;
+  margin-top: 10px;
+  outline: none;
+}
+.loginButton:hover{
+  background-color: rgb(250, 153, 190);
+  transition: 250ms;
+}
+.loginforget{
+  float: right;
+}
+.twitter{
+  float: right;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  color: #6e6d7a;
+}
+
+.calendermain{
+  margin-left: 0%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(199, 199, 206, 0.9);
+  margin-right: 0;
+  padding-bottom: 10px;
+}
+
+    .calender1{
+      flex:1;
+      display: flex;
+    }
+      .profilelogout{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 30px;
+        margin-top: 10px;
+      }
+        .profilepicforlogout{
+          height: 30px; 
+          width: 30px;
+          border-radius: 50%;
+          background-color: #fff;
+        }
+        .logoutInProfilePic{
+          display: block;
+          left: 10px;
+          border-radius: 5px;
+          
+        }
+        .profilecicrle2{
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          margin-top: -10px;
+        }
+        .zindexlogout{
+          position: absolute;
+          z-index: 1;
+          width: 150px;
+          height: 150px;
+          background-color: rgba(195, 195, 236, 0.95);
+          margin-top: 20px;
+          margin-left: -120px;
+          padding: 10px;
+          border-radius: 20%;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0px 5px 10px 1px  rgb(200, 195, 241);
+        }
+        .smalllogout1{
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+          .smalllogout{
+              background-color: rgba(147, 147, 201, 0.8);
+              border-radius: 10px;
+              outline: none;
+          }
+    .calender2{
+      flex:4;
+      display: flex;
+    }
+      .profilecard{
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(90deg, rgb(252, 130, 130) ,rgb(230, 126, 204));
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 20px;
+      }
+        .profilecicrle{
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+          margin: 20px;
+          margin-bottom: 0;
+        }
+        .profilecicrle3{
+          height: 250px;
+          width: 250px;
+          border-radius: 50%;
+          margin: 20px;
+          margin-bottom: 0;
+        }
+        .profileupdate{
+          position: absolute;
+          z-index: 1;
+          height: 50%;
+          width: 25%;
+          background-color: rgba(107, 103, 103, 0.9);
+          border-radius: 15px;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          box-shadow: 0px 5px 10px 1px  rgb(131, 127, 127);
+        }
+        .profileupdate1{
+          flex: 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .profileupdate2{
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          color: white;
+        }
+        .profileupdate3{
+          flex: 1;
+        }
+        .profileupdate4{
+          flex: 1;
+        }
+        .camera{
+          flex: .05;
+          display: flex;
+          justify-content: center;
+          margin-top: -10px;
+          padding-left: 50px;
+          z-index: 3;
+          color: white;
+          font-size: 25px;
+        }
+        
+        .username{
+          color: white;
+        }
+        .tooglerow{
+          display: flex;
+          margin-left: 30px;
+        }
+        .toogle{
+          width:70px;
+          height: 25px;
+          background-color: #e4e4e4;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+        .tooglecircle{
+          width:22px;
+          height: 22px;
+          border-radius: 50%;
+          margin-left: 4px;
+          background-color: white;
+        }
+        .outsidework{
+          flex: 1;
+          background-color: rgb(240, 103, 61);
+          color: white;
+          height: 30px;
+          padding: 3px 10px;
+          border-radius: 5px;
+          margin-left: 500px;
+        }
+        .workhours{
+          display: flex;
+        }
+        .totalworktime{
+          flex: 1;
+          font-size: 20px;
+          padding: 20px 0 0 30px;
+        }
+        .totalwork{
+          font-size: 13px;
+        }
+        .graphrow{
+          height: 33px;
+          background-color: white;
+          margin: 30px 10px 20px 20px;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 5px;
+
+        }
+        .graphrow1{
+          margin: 5px 10px 10px 20px;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 5px;
+          font-size: 10px;
+
+        }
+        .graphcolor1{
+          flex: 2;
+          background-color: teal;
+          height: 25px;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+        }
+        .graphcolor2{
+          flex: 0.5;
+          background-color: white;
+          height: 25px;
+        }
+        .graphcolor3{
+          flex: 0.25;
+          background-color:rgb(117, 163, 163);
+          height: 25px;
+        }
+        .graphcolor4{
+          flex: 0.5;
+          background-color: teal;
+          height: 25px;
+        }
+        .graphcolor5{
+          flex: 0.1;
+          height: 25px;
+          background-color: white;
+        }
+        .graphcolor6{
+          flex: 0.5;
+          background-color: rgb(212, 140, 140);
+          height: 25px;
+        }
+        .graphcolor7{
+          flex: 0.25;
+          background-color: rgb(117, 163, 163);
+          height: 25px;
+        }
+        .graphcolor8{
+          flex: 0.5;
+          background-color: white;
+          height: 25px;
+        }
+        .graphtime{
+          flex: 1;
+        }
+    .calender3{
+      flex:1;
+      padding: 10px;
+    }
+    .calender4{
+      flex:1;
+    }
+    .calender5{
+      flex: 10;
+      background-color:rgba(255, 255, 255, 0.98);
+      width: 93%;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      padding:30px ;
+    }
+    .overlap{
+      overflow: scroll;
+    }
+    .calenderdates{
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .samplecomponent{
+      padding:0px 10px 10px 10px;
+      margin: 20px 5px 5px 5px;
+      height: 100%;
+      width: 250px;
+      border: 2px solid rgb(140, 140, 199);
+    }
+    .tableDayCalender{
+      border: 0.25px solid grey;
+      background-color: rgb(233, 233, 233,0.9);
+      border-radius: 10px;
+      padding: 25px;
+      margin: 20px 0;
+      display: flex;
+    }
+    .tableDayCalender{
+      flex: 1;
+    }
+    .th12{
+      background-color: rgb(230, 230, 230);
+      width: 100%;
+      display: flex;
+    }
+    .th1{
+      flex: 1;
+    }
+    .th2{
+      border-left: 0.25px solid blue;
+      border-right: 0.25px solid blue;
+      border-bottom: 0.25px solid blue;
+    }
+
+.profilepage{
+  width:100%;
+  height: 92vh;
+  background-color: rgba(230, 230, 230, 0.9);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 50px 0px 100px;
+  color: #6e6d7a;
+}
+.profilepageleft{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+  .profilepagelefttop{
+    background-color: #6e6d7a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 10px #c2c0c0;
+  }
+  .profilepageleftbottom{
+    background-color: #6e6d7a;
+    color: rgb(54, 183, 206);
+    box-shadow: 1px 1px 10px 10px #c2c0c0;
+    height: 100%;
+    margin: 20px 0px 50px 0px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+.profilepageright{
+  flex: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  color: white;
+}
+  .profilepagerighttop{
+    flex: 1;
+    background-color: #6e6d7a;
+    box-shadow: 1px 1px 10px 10px #c2c0c0;
+    height: 100%;
+    margin: 5px 40px 10px 40px;
+    border-radius: 10px;
+    padding: 10px 0 0 20px;
+  }
+  
+  .profilepagerightmiddle{
+    flex :1;
+    background-color: #6e6d7a;
+    box-shadow: 1px 1px 10px 10px #c2c0c0;
+    height: 100%;
+    margin: 10px 40px;
+    border-radius: 10px;
+  }
+  .profilepagerightbottom{
+    flex :1;
+    background-color: #6e6d7a;
+    box-shadow: 1px 1px 10px 10px #c2c0c0;
+    height: 100%;
+    margin: 10px 40px 50px 40px;
+    border-radius: 10px;
+  }
+  .chart3{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+  }
+  .chart4{
+    width:100%
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .profilepagerighttop{
+      margin: 5px 0 10px 0;
+    }
+    .profilepage{
+      height:100vh;
+      padding: 20px 20px 0px 50px;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .profilepagerighttop{
+      margin: 5px 0 10px 0;
+    }
+    .calendermain{
+      height: 100vh;
+    }
+    .profilepage{
+      height:100vh;
+      padding: 20px 20px 20px 40px;
+    }
+    .outsidework {
+      flex: 1 ;
+      background-color: rgb(240, 103, 61);
+      color: white;
+      height: 30px;
+      padding: 3px 10px;
+      border-radius: 5px;
+      margin-left: 200px;
+  }
+  .chartsfusion {
+    padding-right: 20px ;
+}
+  .tooglerow {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+  }
+  @media only screen and (max-width: 500px) {
+    .profilepagerighttop{
+      margin: 5px 0 10px 0;
+    }
+    .profilepage{
+      height:100%;
+    }
+  }
+
+
+.smallcircle{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(100, 100, 100, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #000000;
+  float: right;
+}
+
+/* chartpage */
+.apexChartMain{
+  margin: 0;
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(199, 199, 206, 0.9);
+}
+  .charts{
+    flex: 1;
+    background-color: rgb(154, 148, 158,0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px rgb(174, 174, 175);
+    display: flex;
+    padding: 10px;
+  }
+
+.mqttcomponent{
+    padding: 50px;
+}
+.muqttbutton{
+  background-color: rgb(139, 134, 127);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgb(174, 174, 175);
+  outline: none;
+}
+@media only screen and (max-width: 1020px) {
+  .loginimage{
+    display: none;
+  }
+  .completerow{
+    display: none;
+  }
+  .profileupdate{
+    width: 80% ;
+  }
+}
+
+
+.samole{
+  color: #bbbbbb;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(168, 168, 168); 
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgb(82, 82, 82);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b9b9b9; 
+} 
+
+.app{
+  flex: 1;
+}
