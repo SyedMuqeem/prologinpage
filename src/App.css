@@ -500,6 +500,9 @@ hr.divider {
     margin-left: 30px;
     margin-right: 30px;
 }
+.profilepageright {
+  padding-left: 20px;
+}
   }
   @media only screen and (max-width: 500px) {
     .profilepagerighttop{
