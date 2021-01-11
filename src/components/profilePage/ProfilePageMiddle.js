@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BsPencil } from 'react-icons/bs';
 import { ImCross } from 'react-icons/im';
 import { TiTick } from 'react-icons/ti';
-import { Col, Container, Row, Button, Form } from 'react-bootstrap';
+import { Col, Container, Row, Button, Form, InputGroup } from 'react-bootstrap';
 import axios from 'axios';
 import { ReactSession } from 'react-client-session';
 
@@ -61,53 +61,58 @@ const ProfilePageMiddle = ({ userDetail, setUserDetail }) => {
                 {modifyProfile ?
 
                     <Col xs={2} className="mr-1">
-                        <Col onClick={() => { setModifyProfile(false) }}><ImCross /></Col>
-                        <Button variant="outline-light" onClick={() => uploadDetails()}><TiTick /></Button>
+                        <Button variant="success" onClick={() => uploadDetails()}><TiTick /></Button>
+                        <Button variant="outline-danger" onClick={() => { setModifyProfile(false) }}><ImCross /></Button>
                     </Col> :
-                    <Col xs={2} className="mr-1" onClick={() => { setModifyProfile(true) }}><BsPencil /></Col>}
+                    <Button variant="info" className="mr-5" onClick={() => { setModifyProfile(true) }}><BsPencil /></Button>}
 
             </Row>
             {modifyProfile ?
                 <>
-                    <Row>
+                    <Row className="pr-2">
                         <Col>
                             <Form.Label>Mobile number</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.fname} className="bgclr" onChange={(e) => setFname(e.target.value)} /> */}
                             <Form.Control type="text" placeholder={userDetail.mobile1} className="bgclr" disabled />
                         </Col>
-                        
+
                     </Row>
-                    <Row className="mb-2">
+                    <Row className="mb-2 pr-2">
                         <Col>
                             <Form.Label>Email</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.gender} className="bgclr" onChange={(e) => setGender(e.target.value)} /> */}
-                            <Form.Control type="text" placeholder={userDetail.email} className="bgclr" disabled  />
+                            <Form.Control type="text" placeholder={userDetail.email} className="bgclr" disabled />
                         </Col>
                         <Col>
                             <Form.Label>Enter Company</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.dob} className="bgclr" onChange={(e) => setDob(e.target.value)} /> */}
-                            <Form.Control type="text" placeholder={userDetail.company} className="bgclr" onChange={(e) => setUserDetail({ ...userDetail, company: e.target.value })} />
+                            <Form.Control type="text" placeholder={userDetail.company} className="bgclr" defaultValue={userDetail.company} onChange={(e) => setUserDetail({ ...userDetail, company: e.target.value })} />
                         </Col>
                     </Row>
                 </>
                 :
                 <>
-                    <Row>
+                    <Row className="pr-2">
                         <Col>
-                            <label>Mobile Number:</label>
-                            {userDetail.mobile1}
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            Email: {userDetail.email}
-                        </Col>
-                        <Col>
-                            Company: {userDetail.company}
+                            <Form.Label>Mobile number</Form.Label>
+                            {/* <Form.Control type="text" placeholder={userDetail.fname} className="bgclr" onChange={(e) => setFname(e.target.value)} /> */}
+                            <Form.Control type="text" placeholder={userDetail.mobile1} className="bgclr" disabled />
                         </Col>
 
                     </Row>
-                    
+                    <Row className="mb-2 pr-2">
+                        <Col>
+                            <Form.Label>Email</Form.Label>
+                            {/* <Form.Control type="text" placeholder={userDetail.gender} className="bgclr" onChange={(e) => setGender(e.target.value)} /> */}
+                            <Form.Control type="text" placeholder={userDetail.email} className="bgclr" disabled />
+                        </Col>
+                        <Col>
+                            <Form.Label>Company</Form.Label>
+                            {/* <Form.Control type="text" placeholder={userDetail.dob} className="bgclr" onChange={(e) => setDob(e.target.value)} /> */}
+                            <Form.Control type="text" placeholder={userDetail.company} className="bgclr" disabled />
+                        </Col>
+                    </Row>
+
 
                 </>
             }

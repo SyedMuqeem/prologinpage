@@ -55,7 +55,7 @@ const Chart4 = () => {
         labels: datatime.map(timesofday),
         theme: {
           monochrome: {
-            enabled: true
+            enabled: false  
           }
         },
         plotOptions: {

@@ -6,7 +6,7 @@ import { Col, Container, Row, Button, Form } from 'react-bootstrap';
 import axios from 'axios';
 import { ReactSession } from 'react-client-session';
 
-const ProfilepageTop = ({ userDetail, setUserDetail }) => {
+const ProfilepageBottom = ({ userDetail, setUserDetail }) => {
     console.log("detail", userDetail);
     const [modifyProfile, setModifyProfile] = useState(false)
 
@@ -56,7 +56,7 @@ const ProfilepageTop = ({ userDetail, setUserDetail }) => {
     return (
         <div className="profilepagerighttop" >
             <Row>
-                <Col className="h4">Personal Details
+                <Col className="h4">Details
                 </Col>
 
                 {modifyProfile ?
@@ -72,26 +72,26 @@ const ProfilepageTop = ({ userDetail, setUserDetail }) => {
                 <>
                     <Row className="pr-2">
                         <Col >
-                            <Form.Label>Enter firstname</Form.Label>
+                            <Form.Label>Enter Address1</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.fname} className="bgclr" onChange={(e) => setFname(e.target.value)} /> */}
-                            <Form.Control type="text" placeholder={userDetail.fname} className="bgclr" defaultValue={userDetail.fname} onChange={(e) => setUserDetail({ ...userDetail, fname: e.target.value })} />
+                            <Form.Control type="text" placeholder={userDetail.address1} className="bgclr" defaultValue={userDetail.address1} onChange={(e) => setUserDetail({ ...userDetail, address1: e.target.value })} />
                         </Col>
                         <Col>
-                            <Form.Label>Enter lastname</Form.Label>
+                            <Form.Label>Enter Address2</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.lname} className="bgclr" onChange={(e) => setLname(e.target.value)} /> */}
-                            <Form.Control type="text" placeholder={userDetail.lname} className="bgclr" defaultValue={userDetail.lname} onChange={(e) => setUserDetail({ ...userDetail, lname: e.target.value })} />
+                            <Form.Control type="text" placeholder={userDetail.address2} className="bgclr" defaultValue={userDetail.address2} onChange={(e) => setUserDetail({ ...userDetail, address2: e.target.value })} />
                         </Col>
                     </Row>
                     <Row className="mb-2 pr-2">
                         <Col>
-                            <Form.Label>Enter Gender</Form.Label>
+                            <Form.Label>Enter Designation</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.gender} className="bgclr" onChange={(e) => setGender(e.target.value)} /> */}
-                            <Form.Control type="text" placeholder={userDetail.gender} className="bgclr" defaultValue={userDetail.gender} onChange={(e) => setUserDetail({ ...userDetail, gender: e.target.value })} />
+                            <Form.Control type="text" placeholder={userDetail.designation} className="bgclr" defaultValue={userDetail.designation} onChange={(e) => setUserDetail({ ...userDetail, designation: e.target.value })} />
                         </Col>
                         <Col>
                             <Form.Label>Enter Date of Birth</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.dob} className="bgclr" onChange={(e) => setDob(e.target.value)} /> */}
-                            <Form.Control type="text" placeholder={userDetail.dob} className="bgclr" defaultValue={userDetail.dob} onChange={(e) => setUserDetail({ ...userDetail, dob: e.target.value })} />
+                            <Form.Control type="text" placeholder={userDetail.dob} className="bgclr" defaultValue={userDetail.dob} disabled  />
                         </Col>
                     </Row>
                 </>
@@ -99,21 +99,21 @@ const ProfilepageTop = ({ userDetail, setUserDetail }) => {
                 <>
                     <Row className="pr-2">
                         <Col>
-                            <Form.Label>Firstname</Form.Label>
+                            <Form.Label>Address1</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.fname} className="bgclr" onChange={(e) => setFname(e.target.value)} /> */}
-                            <Form.Control type="text" placeholder={userDetail.fname} className="bgclr1" disabled />
+                            <Form.Control type="text" placeholder={userDetail.address1} className="bgclr1" disabled />
                         </Col>
                         <Col>
-                            <Form.Label>Lastname</Form.Label>
+                            <Form.Label>Address2</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.lname} className="bgclr" onChange={(e) => setLname(e.target.value)} /> */}
-                            <Form.Control type="text" placeholder={userDetail.lname} className="bgclr1" disabled />
+                            <Form.Control type="text" placeholder={userDetail.address2} className="bgclr1" disabled />
                         </Col>
                     </Row>
                     <Row className="mb-2 pr-2">
                         <Col>
-                            <Form.Label>Gender</Form.Label>
+                            <Form.Label>Designation</Form.Label>
                             {/* <Form.Control type="text" placeholder={userDetail.gender} className="bgclr" onChange={(e) => setGender(e.target.value)} /> */}
-                            <Form.Control type="text" placeholder={userDetail.gender} className="bgclr1" disabled />
+                            <Form.Control type="text" placeholder={userDetail.designation} className="bgclr1" disabled />
                         </Col>
                         <Col>
                             <Form.Label>Date of Birth</Form.Label>
@@ -131,4 +131,4 @@ const ProfilepageTop = ({ userDetail, setUserDetail }) => {
     )
 }
 
-export default ProfilepageTop;
+export default ProfilepageBottom;

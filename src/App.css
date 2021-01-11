@@ -388,7 +388,7 @@ hr.divider {
 
 .profilepage{
   width:100%;
-  height: 92vh;
+  height: 93vh;
   background-color: rgba(230, 230, 230, 0.9);
   display: flex;
   justify-content: space-around;
@@ -422,7 +422,7 @@ hr.divider {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 20px;
+  padding-bottom: 10px;
   color: white;
 }
   .profilepagerighttop{
@@ -458,6 +458,9 @@ hr.divider {
   }
   .chart4{
     width:100%
+  }
+  .bgclr1{
+    background-color: black;
   }
   
   @media only screen and (max-width: 1024px) {
@@ -504,6 +507,10 @@ hr.divider {
     }
     .profilepage{
       height:100%;
+      padding: 10px 5px 0 5px ;
+    }
+    .profilepageleftbottom{
+      font-size: 20px;
     }
   }
 

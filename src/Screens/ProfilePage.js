@@ -4,6 +4,7 @@ import { AiFillCamera } from 'react-icons/ai';
 import axios from 'axios';
 import ProfilepageTop from '../components/profilePage/ProfilepageTop';
 import ProfilePageMiddle from '../components/profilePage/ProfilePageMiddle';
+import ProfilepageBottom from '../components/profilePage/ProfilePageBottom';
 
 const ProfilePage = () => {
 
@@ -102,18 +103,18 @@ const ProfilePage = () => {
                     </div>
 
 
-                    <h1 style={{ color: 'white' }}>{userDetail.fname}  {userDetail.lname}</h1>
+                    <h1 style={{ color: 'white' }}>{userDetail.fname} {userDetail.lname}</h1>
                     <h1>{ReactSession.get("mobile1")}</h1>
                 </div>
                 <div className="profilepageleftbottom">
                     <h3  >Phone Number:  <span style={{ color: 'white' }} >{ReactSession.get("mobile")}</span></h3>
-                    <h3 >Email:  <span style={{ color: 'white' }}>{ReactSession.get("email")}</span></h3>
+                    <h5 >Email:  <span style={{ color: 'white' }}>{ReactSession.get("email")}</span></h5>
                 </div>
             </div>
             <div className="profilepageright">
                 <ProfilepageTop userDetail={userDetail} setUserDetail={setUserDetail}/>
                 <ProfilePageMiddle userDetail={userDetail} setUserDetail={setUserDetail}/>
-                <div className="profilepagerightbottom"> 3</div>
+                <ProfilepageBottom userDetail={userDetail} setUserDetail={setUserDetail}/>
 
             </div>
 

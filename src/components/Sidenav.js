@@ -46,6 +46,7 @@ const SidebarNav = styled.nav`
     display: flex;
     justify-content:center;
     position: fixed;
+    top-right-radius:10px;
     top:0;
     left: ${({ sidebar }) => (sidebar ? '-100%' : '0')};
     transition: 350ms;
