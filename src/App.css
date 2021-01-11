@@ -480,7 +480,7 @@ hr.divider {
       height: 100vh;
     }
     .profilepage{
-      height:100vh;
+      height:97vh;
       padding: 20px 20px 20px 40px;
     }
     .outsidework {
@@ -502,6 +502,7 @@ hr.divider {
 }
 .profilepageright {
   padding-left: 20px;
+  padding-bottom: 37px;
 }
   }
   @media only screen and (max-width: 500px) {
@@ -514,6 +515,9 @@ hr.divider {
     }
     .profilepageleftbottom{
       font-size: 20px;
+    }
+    .profilepageright {
+      padding: 0px;
     }
   }
 
