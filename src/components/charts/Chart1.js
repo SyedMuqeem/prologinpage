@@ -62,11 +62,11 @@ const Chart1 = () => {
 
   var d = new Date();
   // for liter consuption
-  const datamapping = (data,datatime) => {
+  const datamapping = (data,index) => {
     return (
       {
         // label: `${datatime === 5 ? moment(new Date()).format('dddd') : ("")}` ,
-        label: `${datatime===0 ? ("") : (datatime===1 ? "" : (datatime===2 && 3 && 4 ? "" : (datatime===5 ?"Yesterday": "Today"))) }` ,
+        label: moment(datatime[index]).format('dddd') ,
         value: data
       }
     )

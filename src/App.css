@@ -462,6 +462,83 @@ hr.divider {
   .bgclr1{
     background-color: black;
   }
+  .waterManagment{
+    padding: 20px;
+    height: 100%;
+    background-color: #2b2b4b;
+  }
+  .barGraph1inWater{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #494950;
+  }
+  .barGraph1inWaterdaily{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #494950;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .barwaterflexmain{
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .barwaterflex{
+    flex: 1;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #494950;
+    min-width: 300px;
+    height: 600px;
+  }
+  .barwaterflex1{
+    flex: 0.5;
+    color: white;
+    min-width: 320px;
+    background-color: teal;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cardWaterMan{
+    border-bottom: 0.25px solid white;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .cardWaterManbutton{
+    background-color: none;
+  }
+  .cardWaterManbutton1{
+    outline: none;
+    border-radius: 5px;
+    color: rgb(0, 238, 238);
+    background-color: rgb(104, 99, 104);
+  }
+  .cardWaterManRupees{
+    font-size: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.25px solid rgb(197, 197, 197);
+  }
+  .cardWaterManRupees span{
+    font-size: 25px;
+  }
+  .cardWaterManfooter{
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .samole{
+    color: #dae5ec;
+  }
+  
   
   @media only screen and (max-width: 1024px) {
     .profilepagerighttop{
@@ -504,7 +581,14 @@ hr.divider {
   padding-left: 20px;
   padding-bottom: 37px;
 }
+.cardWaterManFooter1{
+  margin-right: 50px;
+}
   }
+
+
+
+
   @media only screen and (max-width: 500px) {
     .profilepagerighttop{
       margin: 5px 0 10px 0;
@@ -518,6 +602,19 @@ hr.divider {
     }
     .profilepageright {
       padding: 0px;
+    }
+    .barGraph1inWater{
+      padding: 0;
+    }
+    .barwaterflex1{
+      margin-left: 0;
+      margin-bottom: 20px;
+      width: 100%;
+
+
+    }
+    .cardWaterManFooter1{
+      margin-right: 60px;
     }
   }
 
@@ -563,6 +660,11 @@ hr.divider {
   box-shadow: 5px 5px 5px 5px rgb(174, 174, 175);
   outline: none;
 }
+
+
+
+
+
 @media only screen and (max-width: 1020px) {
   .loginimage{
     display: none;
@@ -576,9 +678,7 @@ hr.divider {
 }
 
 
-.samole{
-  color: #bbbbbb;
-}
+
 
 /* scrollbar */
 /* width */
