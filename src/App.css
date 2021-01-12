@@ -489,7 +489,7 @@ hr.divider {
     padding: 10px;
     background-color: #494950;
     min-width: 300px;
-    height: 600px;
+    height: 730px;
   }
   .barwaterflex1{
     flex: 0.5;
@@ -589,7 +589,7 @@ hr.divider {
 
 
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 540px) {
     .profilepagerighttop{
       margin: 5px 0 10px 0;
     }

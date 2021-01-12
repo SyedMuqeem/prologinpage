@@ -38,7 +38,7 @@ const WaterMansDet = () => {
                         )
                 ) : (
                         dispGraph === "day" ? (
-                            <div className="barwaterflex p-5" ><DataTableForDay /></div>
+                            <div className="barwaterflex p-5 " ><DataTableForDay /></div>
                         ) : (
                                 dispGraph === "week" ? (
                                     <div className="barwaterflex p-5" ><DataTableForWeek /></div>
